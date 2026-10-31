@@ -1,0 +1,12 @@
+2026-10-30 08:29:34,351Z INFO run_id=run_20261030T082934_a1d721 start as_of=2026-01-15T07:40:00Z files=8
+2026-10-30 08:29:34,353Z INFO registry rows=11 accepted=8 new_or_changed=8 rejected=3
+2026-10-30 08:29:34,362Z INFO file=load_events_20260108.csv read=137 loaded=127 already_loaded=0 rejected=10
+2026-10-30 08:29:34,370Z INFO file=load_events_20260109.csv read=203 loaded=192 already_loaded=1 rejected=10
+2026-10-30 08:29:34,377Z INFO file=load_events_20260110.csv read=209 loaded=198 already_loaded=1 rejected=10
+2026-10-30 08:29:34,384Z INFO file=load_events_20260111.csv read=200 loaded=189 already_loaded=1 rejected=10
+2026-10-30 08:29:34,391Z INFO file=load_events_20260112.csv read=201 loaded=190 already_loaded=1 rejected=10
+2026-10-30 08:29:34,399Z INFO file=load_events_20260113.csv read=199 loaded=188 already_loaded=1 rejected=10
+2026-10-30 08:29:34,408Z INFO file=load_events_20260114.csv read=209 loaded=198 already_loaded=1 rejected=10
+2026-10-30 08:29:34,412Z INFO file=load_events_20260115.csv read=84 loaded=73 already_loaded=1 rejected=10
+2026-10-30 08:29:34,494Z INFO evaluated partitions=700 alerts_open=110 new=110 resolved=0 stale_datasets=0
+2026-10-30 08:29:34,495Z INFO run_id=run_20261030T082934_a1d721 end status=SUCCESS read=1442 loaded=1355 already_loaded=7 rejected=80 files_failed=0 partitions=700 alerts_open=110 duration=0.15s

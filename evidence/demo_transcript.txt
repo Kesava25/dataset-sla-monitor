@@ -1,0 +1,44 @@
+
+== 0. Generate reproducible sample data (seed 42) + answer key
+  "partitions": 700,
+  "totals": {
+    "rows_read": 1442,
+    "rows_loaded": 1355,
+    "rows_already_loaded": 7,
+    "rows_rejected": 80
+  },
+
+== 1. First run: ingest 8 files, quarantine bad rows, evaluate SLAs, reconcile against the answer key
+run run_20261030T082933_a1d721: SUCCESS | read=1442 loaded=1355 already_loaded=7 rejected=80 files_failed=0 files_skipped=0 partitions=700 alerts_open=110
+report: output/demo/validation_report.md  validation=PASS
+exit code: 0
+
+== 2. Re-run on identical input: every file skipped, zero rows loaded, outputs unchanged
+run run_20261030T082933_a1d721_2: SUCCESS | read=0 loaded=0 already_loaded=0 rejected=0 files_failed=0 files_skipped=8 partitions=700 alerts_open=110
+report: output/demo/validation_report.md  validation=PASS
+exit code: 0
+
+== 3. Partial failure: drop in 3 broken files (schema change, 0-byte, non-UTF8) + 1 empty batch + 1 extra-column file
+2026-10-30 08:29:33,707Z ERROR file=bad_schema.csv FAILED SCHEMA_MISMATCH: missing required columns ['event_ts']; header was ['dataset_id', 'partition_key', 'event_type', 'event_time', 'row_count']
+2026-10-30 08:29:33,708Z ERROR file=empty_file.csv FAILED EMPTY_FILE: file has no content (no header row)
+2026-10-30 08:29:33,712Z WARNING file=extra_column.csv unexpected extra columns ignored: ['producer_version']
+2026-10-30 08:29:33,713Z WARNING file=header_only.csv empty batch: header only, no data rows
+2026-10-30 08:29:33,718Z ERROR file=not_utf8.csv FAILED NOT_UTF8_TEXT: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+run run_20261030T082933_63bd01: PARTIAL_SUCCESS | read=2 loaded=0 already_loaded=2 rejected=0 files_failed=3 files_skipped=8 partitions=700 alerts_open=110
+exit code: 2   (2 = PARTIAL_SUCCESS: good files loaded, broken ones reported, nothing half-loaded)
+
+== 4. Retry: producer fixes the schema and removes the junk -> ONLY the fixed file is processed; the rest are skipped
+INFO file=bad_schema.csv read=1 loaded=1 already_loaded=0 rejected=0
+INFO file=extra_column.csv skipped (already loaded, same sha256)
+INFO file=header_only.csv skipped (already loaded, same sha256)
+INFO file=load_events_20260108.csv skipped (already loaded, same sha256)
+INFO file=load_events_20260109.csv skipped (already loaded, same sha256)
+INFO file=load_events_20260110.csv skipped (already loaded, same sha256)
+exit code: 0
+
+== 5. Replay/backfill: re-evaluate the SAME stored events 4h later (window widened by 4h so it covers the same partitions)
+evaluated partitions=717 alerts_open=137 new=31 resolved=4 stale_datasets=4
+alerts by status: {'OPEN': 137, 'RESOLVED': 4}
+example of a RESOLVED alert (history kept):
+   ('MISSING_LOAD', 'ds_payments', '2026-01-11T02', '2026-01-15T07:40:00Z', '2026-01-15T11:40:00Z')
+   ('MISSING_LOAD', 'ds_orders', '2026-01-09T18', '2026-01-15T07:40:00Z', '2026-01-15T11:40:00Z')

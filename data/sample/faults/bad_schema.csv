@@ -1,0 +1,2 @@
+dataset_id,partition_key,event_type,event_time,row_count
+ds_orders,2026-01-14T02,ARRIVED,2026-01-14T02:12:00Z,

@@ -1,0 +1,34 @@
+2026-10-31 10:59:44,595Z INFO run_id=run_20261031T105944_63bd01 start as_of=2026-01-15T07:40:00Z files=13
+2026-10-31 10:59:44,627Z INFO registry rows=11 accepted=8 new_or_changed=0 rejected=3
+2026-10-31 10:59:44,651Z ERROR file=bad_schema.csv FAILED SCHEMA_MISMATCH: missing required columns ['event_ts']; header was ['dataset_id', 'partition_key', 'event_type', 'event_time', 'row_count']
+2026-10-31 10:59:44,681Z ERROR file=empty_file.csv FAILED EMPTY_FILE: file has no content (no header row)
+2026-10-31 10:59:44,714Z WARNING file=extra_column.csv unexpected extra columns ignored: ['producer_version']
+2026-10-31 10:59:44,715Z INFO file=extra_column.csv read=2 loaded=0 already_loaded=2 rejected=0
+2026-10-31 10:59:44,738Z WARNING file=header_only.csv empty batch: header only, no data rows
+2026-10-31 10:59:44,739Z INFO file=header_only.csv read=0 loaded=0 already_loaded=0 rejected=0
+2026-10-31 10:59:44,754Z INFO file=load_events_20260108.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,769Z INFO file=load_events_20260109.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,778Z INFO file=load_events_20260110.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,788Z INFO file=load_events_20260111.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,798Z INFO file=load_events_20260112.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,806Z INFO file=load_events_20260113.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,815Z INFO file=load_events_20260114.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,824Z INFO file=load_events_20260115.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:44,849Z ERROR file=not_utf8.csv FAILED NOT_UTF8_TEXT: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2026-10-31 10:59:45,075Z INFO evaluated partitions=700 alerts_open=110 new=0 resolved=0 stale_datasets=0
+2026-10-31 10:59:45,082Z INFO run_id=run_20261031T105944_63bd01 end status=PARTIAL_SUCCESS read=2 loaded=0 already_loaded=2 rejected=0 files_failed=3 partitions=700 alerts_open=110 duration=0.55s
+2026-10-31 10:59:45,527Z INFO run_id=run_20261031T105945_602ebf start as_of=2026-01-15T07:40:00Z files=11
+2026-10-31 10:59:45,536Z INFO registry rows=11 accepted=8 new_or_changed=0 rejected=3
+2026-10-31 10:59:45,551Z INFO file=bad_schema.csv read=1 loaded=1 already_loaded=0 rejected=0
+2026-10-31 10:59:45,555Z INFO file=extra_column.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,558Z INFO file=header_only.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,561Z INFO file=load_events_20260108.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,565Z INFO file=load_events_20260109.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,568Z INFO file=load_events_20260110.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,572Z INFO file=load_events_20260111.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,575Z INFO file=load_events_20260112.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,578Z INFO file=load_events_20260113.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,582Z INFO file=load_events_20260114.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,585Z INFO file=load_events_20260115.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:45,774Z INFO evaluated partitions=700 alerts_open=110 new=0 resolved=0 stale_datasets=0
+2026-10-31 10:59:45,782Z INFO run_id=run_20261031T105945_602ebf end status=SUCCESS read=1 loaded=1 already_loaded=0 rejected=0 files_failed=0 partitions=700 alerts_open=110 duration=0.29s

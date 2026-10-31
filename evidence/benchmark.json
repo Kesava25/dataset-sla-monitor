@@ -1,0 +1,24 @@
+{
+  "datasets": 60,
+  "days": 90,
+  "input_rows": 136396,
+  "partitions": 67500,
+  "generate_seconds": 5.26,
+  "ingest_seconds": 7.289,
+  "evaluate_seconds": 5.642,
+  "pipeline_total_seconds": 12.94,
+  "ingest_rows_per_sec": 18713,
+  "evaluate_partitions_per_sec": 11964,
+  "rerun_seconds_all_files_skipped": 6.13,
+  "rerun_status": "SUCCESS",
+  "rerun_rows_loaded": 0,
+  "db_size_mb": 63.3,
+  "peak_rss_mb": 95,
+  "status": "SUCCESS",
+  "alerts_open": 7862,
+  "optimisation_insert_strategy": {
+    "naive_rows_per_sec": 4675,
+    "batched_rows_per_sec": 123229,
+    "speedup_x": 26.4
+  }
+}

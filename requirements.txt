@@ -1,0 +1,2 @@
+# Runtime and tests use the Python standard library only (Python >= 3.10, SQLite >= 3.24).
+# Nothing to install. Optional: pytest can also run the tests (python -m pytest) but is not required.

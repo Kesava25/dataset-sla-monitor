@@ -1,0 +1,3 @@
+dataset_id,partition_key,event_type,event_ts,row_count,producer_version
+ds_customers,2026-01-08T22,COMPLETED,2026-01-08T23:00:00Z,242,v2
+ds_orders,2026-01-08T08,ARRIVED,2026-01-08T08:20:20Z,,v2

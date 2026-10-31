@@ -1,0 +1,12 @@
+dataset_id,dataset_name,owner,frequency,expected_offset_minutes,grace_minutes,completion_sla_minutes,min_rows,severity
+ds_orders,Orders feed,data-platform,hourly,8,20,35,239,high
+ds_customers,Customers feed,growth-analytics,hourly,9,13,51,76,medium
+ds_payments,Payments feed,finance-data,hourly,7,18,51,158,critical
+ds_inventory,Inventory feed,supply-chain,hourly,11,11,33,179,medium
+ds_shipments,Shipments feed,data-platform,daily,221,47,198,4964,high
+ds_web_events,Web Events feed,growth-analytics,daily,421,44,139,553,medium
+ds_returns,Returns feed,finance-data,daily,477,35,149,3287,high
+ds_products,Products feed,supply-chain,daily,292,36,109,1259,high
+ds_bad_frequency,Bad,x,weekly,10,10,30,1,low
+ds_bad_sla,Bad,x,daily,100,60,30,1,low
+ds_orders,Duplicate id,x,daily,100,10,30,1,low

@@ -1,0 +1,24 @@
+2026-10-31 10:59:41,463Z INFO run_id=run_20261031T105941_a1d721 start as_of=2026-01-15T07:40:00Z files=8
+2026-10-31 10:59:41,481Z INFO registry rows=11 accepted=8 new_or_changed=8 rejected=3
+2026-10-31 10:59:41,511Z INFO file=load_events_20260108.csv read=137 loaded=127 already_loaded=0 rejected=10
+2026-10-31 10:59:41,550Z INFO file=load_events_20260109.csv read=203 loaded=192 already_loaded=1 rejected=10
+2026-10-31 10:59:41,594Z INFO file=load_events_20260110.csv read=209 loaded=198 already_loaded=1 rejected=10
+2026-10-31 10:59:41,651Z INFO file=load_events_20260111.csv read=200 loaded=189 already_loaded=1 rejected=10
+2026-10-31 10:59:41,728Z INFO file=load_events_20260112.csv read=201 loaded=190 already_loaded=1 rejected=10
+2026-10-31 10:59:41,819Z INFO file=load_events_20260113.csv read=199 loaded=188 already_loaded=1 rejected=10
+2026-10-31 10:59:41,906Z INFO file=load_events_20260114.csv read=209 loaded=198 already_loaded=1 rejected=10
+2026-10-31 10:59:41,980Z INFO file=load_events_20260115.csv read=84 loaded=73 already_loaded=1 rejected=10
+2026-10-31 10:59:42,181Z INFO evaluated partitions=700 alerts_open=110 new=110 resolved=0 stale_datasets=0
+2026-10-31 10:59:42,189Z INFO run_id=run_20261031T105941_a1d721 end status=SUCCESS read=1442 loaded=1355 already_loaded=7 rejected=80 files_failed=0 partitions=700 alerts_open=110 duration=0.88s
+2026-10-31 10:59:43,065Z INFO run_id=run_20261031T105943_a1d721 start as_of=2026-01-15T07:40:00Z files=8
+2026-10-31 10:59:43,079Z INFO registry rows=11 accepted=8 new_or_changed=0 rejected=3
+2026-10-31 10:59:43,086Z INFO file=load_events_20260108.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,094Z INFO file=load_events_20260109.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,102Z INFO file=load_events_20260110.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,109Z INFO file=load_events_20260111.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,115Z INFO file=load_events_20260112.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,120Z INFO file=load_events_20260113.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,126Z INFO file=load_events_20260114.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,135Z INFO file=load_events_20260115.csv skipped (already loaded, same sha256)
+2026-10-31 10:59:43,347Z INFO evaluated partitions=700 alerts_open=110 new=0 resolved=0 stale_datasets=0
+2026-10-31 10:59:43,354Z INFO run_id=run_20261031T105943_a1d721 end status=SUCCESS read=0 loaded=0 already_loaded=0 rejected=0 files_failed=0 partitions=700 alerts_open=110 duration=0.33s

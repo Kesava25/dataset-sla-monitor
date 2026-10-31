@@ -1,0 +1,2 @@
+run_id,started_at,finished_at,status,as_of_ts,files_seen,files_loaded,files_skipped,files_failed,rows_read,rows_loaded,rows_already_loaded,rows_rejected,partitions_evaluated,alerts_open,duration_seconds,failure_reason
+run_20261030T082934_a1d721,2026-10-30T08:29:34Z,2026-10-30T08:29:34Z,SUCCESS,2026-01-15T07:40:00Z,8,8,0,0,1442,1355,7,80,700,110,0.151,

@@ -1,0 +1,96 @@
+{
+  "params": {
+    "seed": 42,
+    "datasets": 8,
+    "days": 7,
+    "as_of": "2026-01-15T07:40:00Z",
+    "hourly_fraction": 0.5,
+    "anomalies": true
+  },
+  "partitions": 700,
+  "scenario_counts": {
+    "FAILED": 12,
+    "FUTURE_ARRIVAL": 6,
+    "GRACE_NONE": 1,
+    "LATE_ARRIVAL": 34,
+    "LATE_COMPLETION": 23,
+    "LOW_ROW_COUNT": 11,
+    "MISSING": 16,
+    "NO_ARRIVAL_EVENT": 10,
+    "ON_TIME": 567,
+    "ON_TIME_EARLY": 1,
+    "OVERDUE": 6,
+    "PENDING_ARRIVED": 1,
+    "PENDING_MISSING": 2,
+    "RETRY_ON_TIME": 10
+  },
+  "totals": {
+    "rows_read": 1442,
+    "rows_loaded": 1355,
+    "rows_already_loaded": 7,
+    "rows_rejected": 80
+  },
+  "reject_reason_counts": {
+    "DUPLICATE_DATASET_ID": 1,
+    "DUPLICATE_EVENT": 16,
+    "INVALID_EVENT_TYPE": 8,
+    "INVALID_FREQUENCY": 1,
+    "INVALID_PARTITION_KEY": 8,
+    "INVALID_ROW_COUNT": 8,
+    "INVALID_SLA_DEFINITION": 1,
+    "INVALID_TIMESTAMP": 8,
+    "MALFORMED_ROW": 8,
+    "MISSING_REQUIRED_FIELD": 16,
+    "UNKNOWN_DATASET": 8
+  },
+  "per_file": {
+    "load_events_20260108.csv": {
+      "rows_read": 137,
+      "rows_loaded": 127,
+      "rows_already_loaded": 0,
+      "rows_rejected": 10
+    },
+    "load_events_20260109.csv": {
+      "rows_read": 203,
+      "rows_loaded": 192,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    },
+    "load_events_20260110.csv": {
+      "rows_read": 209,
+      "rows_loaded": 198,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    },
+    "load_events_20260111.csv": {
+      "rows_read": 200,
+      "rows_loaded": 189,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    },
+    "load_events_20260112.csv": {
+      "rows_read": 201,
+      "rows_loaded": 190,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    },
+    "load_events_20260113.csv": {
+      "rows_read": 199,
+      "rows_loaded": 188,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    },
+    "load_events_20260114.csv": {
+      "rows_read": 209,
+      "rows_loaded": 198,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    },
+    "load_events_20260115.csv": {
+      "rows_read": 84,
+      "rows_loaded": 73,
+      "rows_already_loaded": 1,
+      "rows_rejected": 10
+    }
+  }
+}

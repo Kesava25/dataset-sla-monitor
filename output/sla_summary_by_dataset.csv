@@ -1,0 +1,9 @@
+dataset_id,frequency,severity,partitions,met,breached,pending,compliance_pct,avg_arrival_delay_min,missing,late_arrivals,late_completions,low_row_count
+ds_customers,hourly,medium,168,150,18,0,89.29,7.61,6,3,3,1
+ds_inventory,hourly,medium,168,147,20,1,88.02,7.39,3,11,5,3
+ds_orders,hourly,high,168,134,34,0,79.76,11.35,10,13,6,2
+ds_payments,hourly,critical,168,144,24,0,85.71,10.73,4,6,9,5
+ds_products,daily,high,7,6,1,0,85.71,23.92,1,0,0,0
+ds_returns,daily,high,7,6,1,0,85.71,27.29,0,1,0,0
+ds_shipments,daily,high,7,6,1,0,85.71,28.48,0,0,0,0
+ds_web_events,daily,medium,7,6,0,1,100.0,29.29,0,0,0,0

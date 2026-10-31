@@ -1,0 +1,74 @@
+test_each_type (tests.test_classify.AlertRuleTests.test_each_type) ... ok
+test_healthy_partition_has_no_alerts (tests.test_classify.AlertRuleTests.test_healthy_partition_has_no_alerts) ... ok
+test_missing_suppresses_completion_alerts (tests.test_classify.AlertRuleTests.test_missing_suppresses_completion_alerts) ... ok
+test_arrival_boundary_inclusive_then_one_second_late (tests.test_classify.ClassifyTests.test_arrival_boundary_inclusive_then_one_second_late) ... ok
+test_arrived_but_never_completed (tests.test_classify.ClassifyTests.test_arrived_but_never_completed) ... ok
+test_completion_before_arrival_is_flagged_not_hidden (tests.test_classify.ClassifyTests.test_completion_before_arrival_is_flagged_not_hidden) ... ok
+test_completion_boundary_inclusive_then_one_second_late (tests.test_classify.ClassifyTests.test_completion_boundary_inclusive_then_one_second_late) ... ok
+test_completion_without_arrival_event_implies_arrival (tests.test_classify.ClassifyTests.test_completion_without_arrival_event_implies_arrival) ... ok
+test_duplicate_arrivals_use_earliest (tests.test_classify.ClassifyTests.test_duplicate_arrivals_use_earliest) ... ok
+test_failed_then_retry_completed_is_ok_but_failed_alone_is_not (tests.test_classify.ClassifyTests.test_failed_then_retry_completed_is_ok_but_failed_alone_is_not) ... ok
+test_latest_completion_row_count_wins_but_first_completion_sets_sla (tests.test_classify.ClassifyTests.test_latest_completion_row_count_wins_but_first_completion_sets_sla) ... ok
+test_low_row_count_boundary (tests.test_classify.ClassifyTests.test_low_row_count_boundary) ... ok
+test_on_time (tests.test_classify.ClassifyTests.test_on_time) ... ok
+test_out_of_order_events_give_same_result (tests.test_classify.ClassifyTests.test_out_of_order_events_give_same_result) ... ok
+test_pending_then_missing_at_deadline_boundary (tests.test_classify.ClassifyTests.test_pending_then_missing_at_deadline_boundary) ... ok
+test_generate_run_report_and_exit_codes (tests.test_e2e.CliTests.test_generate_run_report_and_exit_codes) ... ok
+test_all_required_scenarios_are_present_in_generated_data (tests.test_e2e.E2E.test_all_required_scenarios_are_present_in_generated_data) ... ok
+test_answer_key_comparison_has_teeth (tests.test_e2e.E2E.test_answer_key_comparison_has_teeth)
+Mutation test: if the evaluator ignored grace periods, the answer key must notice. ... ok
+test_answer_key_is_separate_from_input (tests.test_e2e.E2E.test_answer_key_is_separate_from_input) ... ok
+test_fault_files_from_generator_behave_as_documented (tests.test_e2e.E2E.test_fault_files_from_generator_behave_as_documented) ... ok
+test_generator_is_deterministic_and_seed_sensitive (tests.test_e2e.E2E.test_generator_is_deterministic_and_seed_sensitive) ... ok
+test_pipeline_matches_answer_key_and_reconciles (tests.test_e2e.E2E.test_pipeline_matches_answer_key_and_reconciles) ... ok
+test_rerun_after_full_load_is_a_noop (tests.test_e2e.E2E.test_rerun_after_full_load_is_a_noop) ... ok
+test_aged_out_open_alert_is_not_silently_resolved (tests.test_pipeline.AlertAndFreshnessTests.test_aged_out_open_alert_is_not_silently_resolved) ... ok
+test_alert_lifecycle_open_then_resolved_and_history_kept (tests.test_pipeline.AlertAndFreshnessTests.test_alert_lifecycle_open_then_resolved_and_history_kept) ... ok
+test_freshness_fresh_stale_never_loaded (tests.test_pipeline.AlertAndFreshnessTests.test_freshness_fresh_stale_never_loaded) ... ok
+test_future_events_are_invisible_to_earlier_as_of (tests.test_pipeline.AlertAndFreshnessTests.test_future_events_are_invisible_to_earlier_as_of) ... ok
+test_hourly_partition_across_midnight (tests.test_pipeline.AlertAndFreshnessTests.test_hourly_partition_across_midnight) ... ok
+test_low_row_count_alert_raised (tests.test_pipeline.AlertAndFreshnessTests.test_low_row_count_alert_raised) ... ok
+test_bom_blank_lines_and_header_case_tolerated (tests.test_pipeline.HappyAndEmptyTests.test_bom_blank_lines_and_header_case_tolerated) ... ok
+test_empty_batch_header_only (tests.test_pipeline.HappyAndEmptyTests.test_empty_batch_header_only) ... ok
+test_empty_directory_is_success_with_zero_files (tests.test_pipeline.HappyAndEmptyTests.test_empty_directory_is_success_with_zero_files) ... ok
+test_happy_path (tests.test_pipeline.HappyAndEmptyTests.test_happy_path) ... ok
+test_zero_byte_and_non_utf8_files_fail_cleanly (tests.test_pipeline.HappyAndEmptyTests.test_zero_byte_and_non_utf8_files_fail_cleanly) ... ok
+test_changed_file_with_same_name_reloads_only_new_events (tests.test_pipeline.IdempotencyTests.test_changed_file_with_same_name_reloads_only_new_events) ... ok
+test_evaluation_is_deterministic_for_same_as_of (tests.test_pipeline.IdempotencyTests.test_evaluation_is_deterministic_for_same_as_of) ... ok
+test_event_replayed_in_another_file_is_not_duplicated_and_not_rejected (tests.test_pipeline.IdempotencyTests.test_event_replayed_in_another_file_is_not_duplicated_and_not_rejected) ... ok
+test_input_file_order_does_not_change_results (tests.test_pipeline.IdempotencyTests.test_input_file_order_does_not_change_results) ... ok
+test_rerun_same_input_changes_nothing (tests.test_pipeline.IdempotencyTests.test_rerun_same_input_changes_nothing) ... ok
+test_duplicates_within_file_first_wins_conflict_is_explained (tests.test_pipeline.QualityTests.test_duplicates_within_file_first_wins_conflict_is_explained) ... ok
+test_malformed_missing_invalid_records_are_quarantined_and_traceable (tests.test_pipeline.QualityTests.test_malformed_missing_invalid_records_are_quarantined_and_traceable) ... ok
+test_timezone_offset_duplicates_collapse (tests.test_pipeline.QualityTests.test_timezone_offset_duplicates_collapse) ... ok
+test_unexpected_extra_column_is_tolerated_with_warning (tests.test_pipeline.QualityTests.test_unexpected_extra_column_is_tolerated_with_warning) ... ok
+test_definition_change_appends_version_and_applies_going_forward (tests.test_pipeline.RegistryHistoryTests.test_definition_change_appends_version_and_applies_going_forward) ... ok
+test_invalid_and_duplicate_registry_rows_rejected_valid_ones_kept (tests.test_pipeline.RegistryHistoryTests.test_invalid_and_duplicate_registry_rows_rejected_valid_ones_kept) ... ok
+test_crash_mid_file_rolls_back_then_retry_loads_everything (tests.test_pipeline.SchemaChangeAndPartialFailureTests.test_crash_mid_file_rolls_back_then_retry_loads_everything) ... ok
+test_failed_file_is_retried_every_run_until_fixed (tests.test_pipeline.SchemaChangeAndPartialFailureTests.test_failed_file_is_retried_every_run_until_fixed) ... ok
+test_killed_run_is_marked_abandoned_by_next_run (tests.test_pipeline.SchemaChangeAndPartialFailureTests.test_killed_run_is_marked_abandoned_by_next_run) ... ok
+test_missing_registry_fails_run_with_reason (tests.test_pipeline.SchemaChangeAndPartialFailureTests.test_missing_registry_fails_run_with_reason) ... ok
+test_registry_removed_later_uses_stored_definitions (tests.test_pipeline.SchemaChangeAndPartialFailureTests.test_registry_removed_later_uses_stored_definitions) ... ok
+test_schema_change_fails_that_file_only_then_recovers_when_fixed (tests.test_pipeline.SchemaChangeAndPartialFailureTests.test_schema_change_fails_that_file_only_then_recovers_when_fixed) ... ok
+test_daily_deadlines (tests.test_schedule.ScheduleTests.test_daily_deadlines) ... ok
+test_hourly_deadlines_cross_midnight (tests.test_schedule.ScheduleTests.test_hourly_deadlines_cross_midnight) ... ok
+test_invalid_partition_keys (tests.test_schedule.ScheduleTests.test_invalid_partition_keys) ... ok
+test_max_staleness (tests.test_schedule.ScheduleTests.test_max_staleness) ... ok
+test_no_future_partitions (tests.test_schedule.ScheduleTests.test_no_future_partitions) ... ok
+test_window_hourly_lower_bound_exclusive_upper_inclusive (tests.test_schedule.ScheduleTests.test_window_hourly_lower_bound_exclusive_upper_inclusive) ... ok
+test_window_month_and_year_rollover (tests.test_schedule.ScheduleTests.test_window_month_and_year_rollover) ... ok
+test_parse_variants_same_instant (tests.test_schedule.TimeTests.test_parse_variants_same_instant) ... ok
+test_rejects_naive_and_garbage (tests.test_schedule.TimeTests.test_rejects_naive_and_garbage) ... ok
+test_event_type_unknown_dataset_timestamp_partition (tests.test_validation.EventValidationTests.test_event_type_unknown_dataset_timestamp_partition) ... ok
+test_missing_required_each_column (tests.test_validation.EventValidationTests.test_missing_required_each_column) ... ok
+test_row_count_boundaries (tests.test_validation.EventValidationTests.test_row_count_boundaries) ... ok
+test_row_count_required_only_for_completed (tests.test_validation.EventValidationTests.test_row_count_required_only_for_completed) ... ok
+test_same_instant_same_event_id_different_instant_different (tests.test_validation.EventValidationTests.test_same_instant_same_event_id_different_instant_different) ... ok
+test_valid_and_normalised (tests.test_validation.EventValidationTests.test_valid_and_normalised) ... ok
+test_rules (tests.test_validation.RegistryValidationTests.test_rules) ... ok
+test_valid (tests.test_validation.RegistryValidationTests.test_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 68 tests in 1.309s
+
+OK
